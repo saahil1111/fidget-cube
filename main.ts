@@ -12,7 +12,8 @@ input.onGesture(Gesture.Shake, function () {
 })
 input.onGesture(Gesture.TiltRight, function () {
     if (true) {
-    	
+        sprite.turn(Direction.Right, 45)
+        sprite.move(1)
     }
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
