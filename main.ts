@@ -1,6 +1,3 @@
-input.onLogoEvent(TouchButtonEvent.LongPressed, function () {
-    sprite = 0
-})
 input.onButtonPressed(Button.A, function () {
     basic.showIcon(IconNames.Happy)
 })
@@ -31,8 +28,7 @@ basic.showString("6", 5)
         basic.showString("6")
     }
 })
-input.onLogoEvent(TouchButtonEvent.Touched, function () {
-    music.playMelody("- - - - - - - - ", 120)
+input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     basic.showLeds(`
         # # # # #
         # # # # #
@@ -45,7 +41,6 @@ input.onLogoEvent(TouchButtonEvent.Touched, function () {
     basic.pause(100)
 })
 let Letter = 0
-let sprite = 0
 for (let index = 0; index < 1; index++) {
     basic.showLeds(`
         # # # # #
